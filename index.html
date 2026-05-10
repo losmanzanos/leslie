@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5f2" />
 
-    <title>Leslie Cedar, LCSW | Psychotherapy</title>
+    <title>Trauma &amp; Anxiety Therapist in Deerfield Beach, FL | Leslie Cedar, LCSW</title>
+    <meta name="description" content="Compassionate, depth-oriented psychotherapy for adults in Deerfield Beach, FL and online across Florida. Healing childhood trauma, anxiety, and depression. Free 30-minute consultation." />
+    <meta name="keywords" content="therapist Deerfield Beach FL, trauma therapy Florida, anxiety therapist Deerfield Beach, depression therapy Boca Raton, childhood trauma therapy, LCSW Florida, online therapy Florida, psychotherapy Deerfield Beach" />
+    <meta name="author" content="Leslie Cedar, LCSW" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="geo.region" content="US-FL" />
+    <meta name="geo.placename" content="Deerfield Beach" />
+    <meta name="geo.position" content="26.3187;-80.0998" />
+    <meta name="ICBM" content="26.3187, -80.0998" />
 
+    <link rel="canonical" href="https://losmanzanos.github.io/leslie/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Leslie Cedar, LCSW" />
+    <meta property="og:title" content="Trauma &amp; Anxiety Therapist in Deerfield Beach, FL | Leslie Cedar, LCSW" />
+    <meta property="og:description" content="Compassionate, depth-oriented psychotherapy for adults in Deerfield Beach, FL and online across Florida. Healing childhood trauma, anxiety, and depression." />
+    <meta property="og:url" content="https://losmanzanos.github.io/leslie/" />
+    <meta property="og:image" content="https://losmanzanos.github.io/leslie/assets/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Leslie Cedar, LCSW — psychotherapy in Deerfield Beach, Florida" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trauma &amp; Anxiety Therapist in Deerfield Beach, FL | Leslie Cedar, LCSW" />
+    <meta name="twitter:description" content="Compassionate, depth-oriented psychotherapy for adults in Deerfield Beach, FL and online across Florida." />
+    <meta name="twitter:image" content="https://losmanzanos.github.io/leslie/assets/og-default.jpg" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e1e1e'/%3E%3Ctext x='50' y='66' font-family='Playfair Display,serif' font-size='56' text-anchor='middle' fill='%23f7f5f2'%3ELC%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -19,101 +52,213 @@
         background: #f7f5f2;
         color: #1e1e1e;
       }
-
-      .serif {
-        font-family: "Playfair Display", serif;
-      }
-
-      .soft-shadow {
-        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
-      }
-
-      /* subtle architectural line grid */
+      .serif { font-family: "Playfair Display", serif; }
+      .soft-shadow { box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08); }
       .gridline {
         background-image:
           linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
           linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
         background-size: 42px 42px;
       }
-
-      .glass {
-        backdrop-filter: blur(18px);
-        background: rgba(255, 255, 255, 0.58);
+      .glass { backdrop-filter: blur(18px); background: rgba(255, 255, 255, 0.58); }
+      a { transition: opacity .2s ease, color .2s ease; }
+      a:hover { opacity: .75; }
+      .nav-link { position: relative; }
+      .nav-link::after {
+        content: ''; position: absolute; left: 0; right: 0; bottom: -6px;
+        height: 1px; background: #1e1e1e; transform: scaleX(0); transform-origin: left;
+        transition: transform .25s ease;
       }
+      .nav-link:hover::after, .nav-link[aria-current="page"]::after { transform: scaleX(1); }
+      details > summary { list-style: none; cursor: pointer; }
+      details > summary::-webkit-details-marker { display: none; }
+      details[open] .chev { transform: rotate(45deg); }
     </style>
+
+    <!-- JSON-LD: LocalBusiness / Therapist -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@id": "https://losmanzanos.github.io/leslie/#practice",
+      "name": "Leslie Cedar, LCSW",
+      "alternateName": "Leslie Cedar Therapy",
+      "description": "Licensed clinical social worker offering depth-oriented psychotherapy for childhood trauma, anxiety, and depression in Deerfield Beach, Florida and online throughout Florida.",
+      "url": "https://losmanzanos.github.io/leslie/",
+      "telephone": "+1-954-370-3350",
+      "email": "lcedartherapy@gmail.com",
+      "image": "https://losmanzanos.github.io/leslie/assets/leslie-headshot.jpg",
+      "logo": "https://losmanzanos.github.io/leslie/assets/leslie-headshot.jpg",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "455 Fairway Drive",
+        "addressLocality": "Deerfield Beach",
+        "addressRegion": "FL",
+        "postalCode": "33441",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3187,
+        "longitude": -80.0998
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Florida" },
+        { "@type": "City", "name": "Deerfield Beach" },
+        { "@type": "City", "name": "Boca Raton" },
+        { "@type": "City", "name": "Coconut Creek" },
+        { "@type": "City", "name": "Pompano Beach" },
+        { "@type": "City", "name": "Fort Lauderdale" },
+        { "@type": "City", "name": "Delray Beach" },
+        { "@type": "City", "name": "Boynton Beach" },
+        { "@type": "City", "name": "Parkland" },
+        { "@type": "City", "name": "Coral Springs" }
+      ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://losmanzanos.github.io/leslie/about.html#leslie",
+        "name": "Leslie Cedar",
+        "honorificSuffix": "LCSW",
+        "jobTitle": "Licensed Clinical Social Worker, Psychotherapist",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Columbia University"
+        },
+        "knowsAbout": [
+          "Childhood trauma therapy",
+          "Anxiety treatment",
+          "Depression therapy",
+          "Trauma-informed psychotherapy",
+          "Self-Psychology",
+          "Psychodynamic therapy",
+          "Cognitive Behavioral Therapy"
+        ]
+      },
+      "sameAs": [
+        "https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Therapy Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individual Psychotherapy", "url": "https://losmanzanos.github.io/leslie/services/individual-therapy.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trauma Therapy", "url": "https://losmanzanos.github.io/leslie/services/trauma-therapy.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anxiety Therapy", "url": "https://losmanzanos.github.io/leslie/services/anxiety-therapy.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Depression Therapy", "url": "https://losmanzanos.github.io/leslie/services/depression-therapy.html" } }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://losmanzanos.github.io/leslie/",
+      "name": "Leslie Cedar, LCSW",
+      "publisher": { "@id": "https://losmanzanos.github.io/leslie/#practice" },
+      "inLanguage": "en-US"
+    }
+    </script>
   </head>
 
   <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-black text-white px-4 py-2 rounded">Skip to content</a>
+
     <!-- NAV -->
     <header
-      class="fixed top-0 left-0 w-full bg-[#f7f5f2]/80 backdrop-blur border-b border-[#e9e2d8] z-50"
+      class="fixed top-0 left-0 w-full bg-[#f7f5f2]/85 backdrop-blur border-b border-[#e9e2d8] z-50"
     >
-      <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <div class="serif text-xl tracking-wide">Leslie Cedar, LCSW</div>
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="serif text-xl tracking-wide" aria-label="Leslie Cedar, LCSW — Home">
+          Leslie Cedar, LCSW
+        </a>
 
-        <nav class="hidden md:flex gap-8 text-sm text-[#555]">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#contact">Contact</a>
+        <nav class="hidden md:flex gap-8 text-sm text-[#555] items-center" aria-label="Primary">
+          <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
-        <a class="bg-black text-white px-5 py-2 rounded-full text-sm">
-          Request Consultation
-        </a>
+        <div class="flex items-center gap-3">
+          <a href="tel:+19543703350" class="hidden sm:inline text-sm text-[#555]">954-370-3350</a>
+          <a href="contact.html" class="bg-black text-white px-5 py-2 rounded-full text-sm hidden sm:inline-block">
+            Request Consultation
+          </a>
+          <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile drawer -->
+      <div id="mobileNav" class="md:hidden hidden border-t border-[#e9e2d8] bg-[#f7f5f2]">
+        <nav class="px-6 py-6 flex flex-col gap-4 text-[#1e1e1e]" aria-label="Mobile">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="services/individual-therapy.html" class="pl-4 text-sm text-[#555]">— Individual Therapy</a>
+          <a href="services/trauma-therapy.html" class="pl-4 text-sm text-[#555]">— Trauma Therapy</a>
+          <a href="services/anxiety-therapy.html" class="pl-4 text-sm text-[#555]">— Anxiety Therapy</a>
+          <a href="services/depression-therapy.html" class="pl-4 text-sm text-[#555]">— Depression Therapy</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="bg-black text-white text-center px-5 py-3 rounded-full text-sm mt-2">Request Consultation</a>
+        </nav>
       </div>
     </header>
 
+    <main id="main">
+
     <!-- HERO -->
-    <section class="pt-44 pb-28">
-      <div
-        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center"
-      >
-        <!-- LEFT -->
-        <div>
+    <section class="pt-32 md:pt-40 pb-24 md:pb-28 overflow-hidden">
+      <div class="grid lg:grid-cols-2 items-center gap-12 lg:gap-0">
+        <!-- Text column — constrained to max-w-7xl on the LEFT side only -->
+        <div class="px-6 lg:pl-[max(theme(spacing.6),calc((100vw-1280px)/2+theme(spacing.6)))] lg:pr-12">
           <p class="uppercase tracking-[0.35em] text-xs text-[#777]">
-            <!--Psychotherapy--> <br>Florida + Telehealth
+            Florida + Telehealth
           </p>
 
-          <h1 class="serif text-6xl leading-[1.05] mt-6">
+          <h1 class="serif text-5xl md:text-6xl leading-[1.05] mt-6">
             A return to<br />
             internal steadiness.
           </h1>
 
           <p class="mt-8 text-lg text-[#555] leading-relaxed max-w-xl">
-            Therapy for trauma, anxiety, emotional overwhelm, and long-standing
-            relational patterns grounded in depth, nervous system awareness,
-            and clinical clarity.
+            Therapy for trauma, anxiety, depression, and long-standing relational
+            patterns &mdash; grounded in depth, nervous system awareness, and over
+            forty years of clinical experience.
           </p>
 
           <div class="mt-10 flex gap-4 flex-wrap">
-            <a class="bg-black text-white px-7 py-3 rounded-full text-sm">
+            <a href="contact.html" class="bg-black text-white px-7 py-3 rounded-full text-sm">
               Start Here
             </a>
-
-            <a class="border border-[#d8d0c5] px-7 py-3 rounded-full text-sm">
-              Learn More
+            <a href="about.html" class="border border-[#d8d0c5] px-7 py-3 rounded-full text-sm">
+              Meet Leslie
             </a>
           </div>
         </div>
 
-        <!-- RIGHT IMAGE -->
+        <!-- Image column — bleeds fully to the right edge of the viewport -->
         <div class="relative">
-          <img
-            src="https://thethrivecenter.org/wp-content/uploads/2025/11/febiyan-k8zwJXrumvQ-unsplash-scaled-e1769635741247-800x0-c-default.jpg"
-            class="rounded-[2rem] soft-shadow h-[650px] w-full object-cover"
-          />
-
-          <!-- FLOATING CARD -->
-          <div
-            class="absolute -bottom-10 -left-10 glass p-8 rounded-[2rem] soft-shadow max-w-xs border border-white/50"
-          >
-            <p class="uppercase tracking-[0.3em] text-[10px] text-[#777]">
-              Clinical Focus
-            </p>
-
+          <div class="relative w-full h-[460px] md:h-[600px] lg:h-[680px] overflow-hidden bg-[#ebe6de]">
+            <img
+              src="assets/hero-bouquet-golden-hour.jpg"
+              alt="Woman holding a wildflower bouquet in golden-hour light — symbol of healing, growth, and emerging into your true self"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <!-- Floating clinical-focus card — sits INSIDE the image, not overhanging -->
+          <div class="absolute bottom-6 left-6 md:bottom-8 md:left-8 glass p-6 md:p-7 max-w-xs border border-white/50 soft-shadow">
+            <p class="uppercase tracking-[0.3em] text-[10px] text-[#777]">Clinical Focus</p>
             <p class="mt-3 text-sm text-[#444] leading-relaxed">
               Helping adults move beyond survival patterns rooted in childhood
               trauma, anxiety, and emotional disconnection.
@@ -127,134 +272,93 @@
     <section class="gridline py-24">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <p class="uppercase tracking-[0.3em] text-xs text-[#777]">Philosophy</p>
-
-        <h2 class="serif text-5xl leading-tight mt-5">
+        <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">
           Therapy is not about becoming someone else.
         </h2>
-
         <p class="mt-8 text-[#555] text-lg leading-relaxed max-w-2xl mx-auto">
-          It's about becoming more connected to who you already are beneath
-          the survival strategies, expectations, and emotional patterns that no
-          longer serve you.
+          It&rsquo;s about becoming more connected to who you already are
+          beneath the survival strategies, expectations, and emotional patterns
+          that no longer serve you.
         </p>
       </div>
     </section>
 
-    <!-- SOUTH FLORIDA SECTION -->
+    <!-- SOUTH FLORIDA / LOCATION -->
     <section class="py-24 bg-[#ece7df]">
-      <div class="max-w-5xl mx-auto px-6">
-        <div
-          class="bg-white rounded-[2rem] p-14 soft-shadow border border-[#e8e0d5]"
-        >
-          <div class="grid md:grid-cols-2 gap-14 items-center">
-            <div>
-              <p class="uppercase tracking-[0.3em] text-xs text-[#777]">
-                Deerfield Beach, Florida
-              </p>
-
-              <h2 class="serif text-5xl leading-tight mt-5">
-                Rooted in South Florida.
-              </h2>
-
-              <p class="mt-6 text-[#555] leading-relaxed text-lg">
-                In-person therapy in Deerfield Beach with secure telehealth
-                sessions available across Florida.
-              </p>
-            </div>
-
-            <div
-              class="relative h-[320px] rounded-[2rem] overflow-hidden soft-shadow"
-            >
-              <!-- IMAGE -->
-              <img
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop"
-                class="absolute inset-0 w-full h-full object-cover"
-              />
-
-              <!-- OVERLAY -->
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-black/10 via-black/20 to-black/35"
-              ></div>
-
-              <!-- FLOATING LABEL 
-  <div class="absolute bottom-6 left-6 glass px-5 py-4 rounded-2xl border border-white/40">
-
-    <p class="uppercase tracking-[0.25em] text-[10px] text-white/70">
-      Location
-    </p>
-
-    <p class="mt-2 text-white serif text-xl">
-      Deerfield Beach
-    </p>
-
-  </div>
--->
-            </div>
-          </div>
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10 md:gap-14">
+        <!-- Text side -->
+        <div class="order-2 md:order-1">
+          <p class="uppercase tracking-[0.3em] text-xs text-[#777]">
+            Deerfield Beach, Florida
+          </p>
+          <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">
+            Rooted in South Florida.
+          </h2>
+          <p class="mt-6 text-[#555] leading-relaxed text-lg">
+            In-person therapy in Deerfield Beach with secure, HIPAA-compliant
+            telehealth available throughout Florida. Conveniently accessible
+            from Boca Raton, Coconut Creek, Pompano Beach, and greater Fort
+            Lauderdale.
+          </p>
+          <a href="contact.html" class="inline-block mt-8 border border-[#d8d0c5] px-6 py-3 rounded-full text-sm">
+            Visit or schedule online &rarr;
+          </a>
+        </div>
+        <!-- Image side: just the photo. No shadow, no overlay, no frame. -->
+        <div class="relative w-full h-[320px] md:h-[460px] order-1 md:order-2 overflow-hidden">
+          <img
+            src="assets/florida-beach-sunrise.jpg"
+            alt="South Florida shoreline at sunrise — Deerfield Beach therapy practice"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT PREVIEW -->
     <section id="about" class="py-28 overflow-hidden">
-      <div
-        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center"
-      >
-        <!-- TEXT -->
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         <div>
-          <p class="uppercase tracking-[0.3em] text-xs text-[#777]">
-            About Leslie
-          </p>
-
-          <h2 class="serif text-5xl leading-tight mt-5">
+          <p class="uppercase tracking-[0.3em] text-xs text-[#777]">About Leslie</p>
+          <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">
             Compassionate, depth-oriented psychotherapy.
           </h2>
-
           <p class="mt-8 text-[#555] leading-relaxed text-lg">
-            Leslie Cedar, LCSW, works with adults experiencing anxiety,
-            emotional overwhelm, relational pain, self-worth struggles, and the
-            long-term impacts of childhood trauma.
+            Leslie Cedar, LCSW, has spent more than forty years helping adults
+            heal from childhood trauma and rediscover their authentic self.
+            She works with anxiety, depression, emotional overwhelm, relational
+            pain, and the long-term impacts of early wounds.
           </p>
-
           <p class="mt-5 text-[#555] leading-relaxed">
-            Her approach is collaborative, grounded, and deeply
-            relational helping clients understand the patterns that developed
-            for survival and gently create new ways of relating to themselves
-            and others.
+            Her approach is collaborative, grounded, and deeply relational
+            &mdash; helping clients understand the patterns that developed for
+            survival, and gently create new ways of relating to themselves and
+            others.
           </p>
-
           <p class="mt-5 text-[#555] leading-relaxed">
-            Therapy becomes a space to slow down, reconnect internally, and move
-            toward a life that feels more authentic, grounded, and emotionally
-            sustainable.
+            Therapy becomes a space to slow down, reconnect internally, and
+            move toward a life that feels more authentic, grounded, and
+            emotionally sustainable.
           </p>
+          <a href="about.html" class="inline-block mt-8 border border-[#d8d0c5] px-6 py-3 rounded-full text-sm">
+            Read more about Leslie &rarr;
+          </a>
         </div>
 
-        <!-- CLOUD IMAGE ART SECTION -->
-        <div class="relative h-[620px]">
-          <!-- BACKGROUND SHAPE -->
-          <div class="absolute inset-0 rounded-[3rem] bg-[#ebe6de]"></div>
-
-          <!-- GRID DETAIL -->
-          <div
-            class="absolute inset-0 gridline rounded-[3rem] opacity-40"
-          ></div>
-
-          <!-- IMAGE -->
-          <img
-            src="https://png.pngtree.com/png-vector/20240706/ourmid/pngtree-a-woman-looking-sad-with-cloud-hovering-over-her-head-png-image_13000013.png"
-            class="absolute inset-0 w-full h-full object-contain p-10"
-          />
-
-          <!-- FLOATING QUOTE -->
-          <div
-            class="absolute bottom-10 right-10 bg-white/80 backdrop-blur p-6 rounded-[1.5rem] max-w-xs soft-shadow"
-          >
-            <p class="text-sm text-[#555] leading-relaxed italic">
-              Healing begins when experiences that once felt unbearable can
-              finally be understood with compassion.
-            </p>
+        <div class="relative max-w-md mx-auto lg:mx-0">
+          <div class="relative aspect-[4/5] bg-[#ebe6de]">
+            <div class="absolute inset-0 gridline opacity-40"></div>
+            <img
+              src="assets/leslie-headshot.jpg"
+              alt="Leslie Cedar, LCSW — psychotherapist in Deerfield Beach, Florida"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
+          <figure class="mt-6">
+            <blockquote class="text-[#555] leading-relaxed italic border-l-2 border-[#1e1e1e] pl-5">
+              Healing begins when experiences that once felt unbearable can finally be understood with compassion.
+            </blockquote>
+          </figure>
         </div>
       </div>
     </section>
@@ -266,39 +370,52 @@
     >
       <div class="max-w-7xl mx-auto px-6">
         <div class="max-w-3xl">
-          <p class="uppercase tracking-[0.3em] text-xs text-[#777]">
-            Areas of Focus
-          </p>
-
-          <h2 class="serif text-5xl leading-tight mt-5">
+          <p class="uppercase tracking-[0.3em] text-xs text-[#777]">How I Help</p>
+          <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">
             Clinical areas of support.
           </h2>
+          <p class="mt-6 text-[#555] text-lg leading-relaxed">
+            Specialized psychotherapy for adults navigating the long shadow of
+            childhood trauma and the patterns that grew up around it.
+          </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 mt-16">
-          <div class="bg-[#faf8f4] border border-[#e7dfd5] rounded-[2rem] p-8">
-            <h3 class="serif text-2xl">Trauma</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          <a href="services/individual-therapy.html" class="group block bg-[#faf8f4] border border-[#e7dfd5] p-8 hover:bg-white">
+            <h3 class="serif text-2xl">Individual Psychotherapy</h3>
             <p class="mt-4 text-sm text-[#555] leading-relaxed">
-              Childhood trauma, emotional neglect, developmental wounds, and
-              nervous system overwhelm.
+              A safe, non-judgmental space to explore the patterns and
+              experiences that have shaped your life &mdash; and gently shift them.
             </p>
-          </div>
+            <span class="inline-block mt-6 text-sm text-[#1e1e1e]">Learn more &rarr;</span>
+          </a>
 
-          <div class="bg-[#faf8f4] border border-[#e7dfd5] rounded-[2rem] p-8">
-            <h3 class="serif text-2xl">Anxiety</h3>
+          <a href="services/trauma-therapy.html" class="group block bg-[#faf8f4] border border-[#e7dfd5] p-8 hover:bg-white">
+            <h3 class="serif text-2xl">Trauma Therapy</h3>
             <p class="mt-4 text-sm text-[#555] leading-relaxed">
-              Persistent worry, perfectionism, emotional tension, burnout, and
-              chronic stress patterns.
+              Healing from childhood trauma, emotional neglect, and developmental
+              wounds at a pace your nervous system can hold.
             </p>
-          </div>
+            <span class="inline-block mt-6 text-sm text-[#1e1e1e]">Learn more &rarr;</span>
+          </a>
 
-          <div class="bg-[#faf8f4] border border-[#e7dfd5] rounded-[2rem] p-8">
-            <h3 class="serif text-2xl">Relationships</h3>
+          <a href="services/anxiety-therapy.html" class="group block bg-[#faf8f4] border border-[#e7dfd5] p-8 hover:bg-white">
+            <h3 class="serif text-2xl">Anxiety Therapy</h3>
             <p class="mt-4 text-sm text-[#555] leading-relaxed">
-              Attachment patterns, boundaries, emotional intimacy, and
-              relational pain.
+              Persistent worry, perfectionism, panic, hypervigilance &mdash;
+              moving from fear-based reactivity to grounded steadiness.
             </p>
-          </div>
+            <span class="inline-block mt-6 text-sm text-[#1e1e1e]">Learn more &rarr;</span>
+          </a>
+
+          <a href="services/depression-therapy.html" class="group block bg-[#faf8f4] border border-[#e7dfd5] p-8 hover:bg-white">
+            <h3 class="serif text-2xl">Depression Therapy</h3>
+            <p class="mt-4 text-sm text-[#555] leading-relaxed">
+              For the heaviness, numbness, and shut-down that often grow from
+              unhealed pain &mdash; finding the way back to yourself.
+            </p>
+            <span class="inline-block mt-6 text-sm text-[#1e1e1e]">Learn more &rarr;</span>
+          </a>
         </div>
       </div>
     </section>
@@ -309,53 +426,98 @@
         <p class="uppercase tracking-[0.3em] text-xs text-[#777]">
           Therapeutic Approach
         </p>
-
-        <h2 class="serif text-5xl leading-tight mt-5">
+        <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">
           Therapy that honors complexity.
         </h2>
-
         <p class="mt-8 text-[#555] text-lg leading-relaxed">
           Healing rarely happens through pressure or performance. Therapy offers
           a slower, more intentional space where patterns can be explored with
-          curiosity rather than judgment.
+          curiosity rather than judgment &mdash; integrating trauma-informed care,
+          self-psychology, psychodynamic insight, and practical CBT tools.
         </p>
+        <a href="about.html#approach" class="inline-block mt-10 border border-[#d8d0c5] px-7 py-3 rounded-full text-sm">
+          More on my approach &rarr;
+        </a>
       </div>
     </section>
 
     <!-- CTA -->
-    <section id="contact" class="bg-black text-white py-32">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <p class="uppercase tracking-[0.3em] text-xs text-white/50">
-          Begin Here
-        </p>
-
-        <h2 class="serif text-5xl leading-tight mt-5">Begin your work here.</h2>
-
-        <p class="mt-8 text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
+    <section id="contact" class="relative bg-black text-white py-32 overflow-hidden">
+      <!-- Background image: arms outstretched, sunlight -->
+      <img src="assets/cta-freedom.jpg" alt="" aria-hidden="true"
+           class="absolute inset-0 w-full h-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/85"></div>
+      <div class="relative max-w-4xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-[0.3em] text-xs text-white/60">Begin Here</p>
+        <h2 class="serif text-4xl md:text-5xl leading-tight mt-5">Begin your work here.</h2>
+        <p class="mt-8 text-white/80 text-lg leading-relaxed max-w-2xl mx-auto">
           Free 30-minute consultation available. In-person sessions in Deerfield
           Beach or telehealth throughout Florida.
         </p>
-
-        <div class="mt-10 text-white/60">
-          lcedartherapy@gmail.com<br />
-          954-370-3350
-        </div>
-
-        <a
-          class="inline-block mt-10 bg-white text-black px-8 py-4 rounded-full text-sm"
-        >
+        <a href="contact.html" class="inline-block mt-10 bg-white text-black px-8 py-4 rounded-full text-sm">
           Request Consultation
         </a>
       </div>
     </section>
 
+    </main>
+
     <!-- FOOTER -->
-    <footer class="py-10 text-center text-sm text-[#777]">
-      <span id="year"></span> Leslie Cedar, LCSW
+    <footer class="relative bg-[#f1ede7] border-t border-[#e7dfd5] overflow-hidden">
+      <img src="assets/accent-footer-corner.png" alt="" aria-hidden="true"
+           class="hidden md:block absolute -top-8 right-0 w-72 lg:w-96 opacity-50 pointer-events-none select-none rotate-180" />
+      <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10 text-sm text-[#555]">
+        <div class="md:col-span-2">
+          <p class="serif text-xl text-[#1e1e1e]">Leslie Cedar, LCSW</p>
+          <p class="mt-3 max-w-md leading-relaxed">
+            Depth-oriented psychotherapy for adults healing from childhood
+            trauma, anxiety, and depression &mdash; in Deerfield Beach, Florida
+            and online statewide.
+          </p>
+          <p class="mt-6">
+            455 Fairway Drive, Deerfield Beach, FL 33441<br />
+            <a href="tel:+19543703350">954-370-3350</a> &middot;
+            <a href="mailto:lcedartherapy@gmail.com">lcedartherapy@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <p class="uppercase tracking-[0.25em] text-xs text-[#777]">Explore</p>
+          <ul class="mt-4 space-y-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Leslie</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="uppercase tracking-[0.25em] text-xs text-[#777]">Specialties</p>
+          <ul class="mt-4 space-y-2">
+            <li><a href="services/individual-therapy.html">Individual Therapy</a></li>
+            <li><a href="services/trauma-therapy.html">Trauma Therapy</a></li>
+            <li><a href="services/anxiety-therapy.html">Anxiety Therapy</a></li>
+            <li><a href="services/depression-therapy.html">Depression Therapy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#e7dfd5]">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between gap-3 text-xs text-[#777]">
+          <p>&copy; <span id="year"></span> Leslie Cedar, LCSW. All rights reserved.</p>
+          <p>
+            <a href="https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057" rel="noopener" target="_blank">Verified on Psychology Today</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      const btn = document.getElementById("menuBtn");
+      const drawer = document.getElementById("mobileNav");
+      btn?.addEventListener("click", () => {
+        const open = drawer.classList.toggle("hidden") === false;
+        btn.setAttribute("aria-expanded", String(open));
+      });
     </script>
   </body>
 </html>
