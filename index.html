@@ -114,9 +114,11 @@
 
       .hairline { background: var(--rule); height: 1px; border: 0; opacity: 0.55; }
 
-      .img-frame-portrait { max-width: 280px; aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); }
-      @media (min-width: 1024px) { .img-frame-portrait { max-width: 300px; } }
-      .img-frame-landscape { aspect-ratio: 5/4; max-width: 100%; overflow: hidden; background: var(--bg-2); }
+      /* Image proportions — wider at tablet (when stacked), tighter on desktop 2-col grids */
+      .img-frame-portrait { width: 100%; max-width: 520px; aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); margin-left: auto; margin-right: auto; }
+      @media (min-width: 1024px) { .img-frame-portrait { max-width: 420px; margin-left: auto; margin-right: 0; } }
+      .img-frame-landscape { width: 100%; max-width: 720px; aspect-ratio: 5/4; overflow: hidden; background: var(--bg-2); margin-left: auto; margin-right: auto; }
+      @media (min-width: 1024px) { .img-frame-landscape { max-width: 520px; } }
 
       .section-padding { padding-top: clamp(3.5rem, 6vw, 5.5rem); padding-bottom: clamp(3.5rem, 6vw, 5.5rem); }
     </style>
@@ -184,9 +186,9 @@
 
     <main id="main">
 
-    <!-- HERO -->
-    <section class="section-padding" style="padding-top: clamp(2.5rem,5vw,4rem);">
-      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.25fr,1fr] gap-10 lg:gap-14 items-center">
+    <!-- HERO — full viewport on load -->
+    <section style="min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 6rem 0 3rem; margin-top: -80px;">
+      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.25fr,1fr] gap-10 lg:gap-14 items-center w-full">
         <div>
           <p class="eyebrow">Deerfield Beach, FL &middot; Online across Florida</p>
           <h1 class="serif mt-6" style="font-size: clamp(1.85rem, 3.4vw, 2.625rem); line-height: 1.12; color: var(--navy);">
