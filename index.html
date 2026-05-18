@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f1e7d3" />
+    <meta name="theme-color" content="#1d2d44" />
 
     <title>Trauma &amp; Anxiety Therapist in Deerfield Beach, FL | Leslie Cedar, LCSW</title>
     <meta name="description" content="Compassionate, depth-oriented psychotherapy for adults healing from childhood trauma, anxiety, and depression. Deerfield Beach, FL and online across Florida." />
-    <meta name="keywords" content="therapist Deerfield Beach FL, trauma therapy Florida, anxiety therapist Deerfield Beach, depression therapy Boca Raton, childhood trauma therapy, LCSW Florida, online therapy Florida, psychotherapy Deerfield Beach" />
+    <meta name="keywords" content="therapist Deerfield Beach FL, trauma therapy Florida, anxiety therapist, depression therapy Boca Raton, childhood trauma therapy, LCSW Florida" />
     <meta name="author" content="Leslie Cedar, LCSW" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="geo.region" content="US-FL" />
     <meta name="geo.placename" content="Deerfield Beach" />
-
     <link rel="canonical" href="https://losmanzanos.github.io/leslie/" />
 
     <meta property="og:type" content="website" />
@@ -21,92 +20,111 @@
     <meta property="og:url" content="https://losmanzanos.github.io/leslie/" />
     <meta property="og:image" content="https://losmanzanos.github.io/leslie/assets/og-default.jpg" />
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231d2d44'/%3E%3Ctext x='50' y='66' font-family='serif' font-size='56' text-anchor='middle' fill='%23f1e7d3'%3ELC%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231d2d44'/%3E%3Ctext x='50' y='66' font-family='serif' font-size='56' text-anchor='middle' fill='%23f6ecd6'%3ELC%3C/text%3E%3C/svg%3E" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       :root {
         --bg: #f1e7d3;
-        --bg-2: #ece0c4;
-        --card: #f6efe0;
-        --ink: #2a3548;
+        --bg-2: #e8dcbe;
+        --bg-blue: #dbe6ed;
+        --bg-blue-2: #c6d4dd;
+        --card: #fdfaf2;
+        --ink: #1d2538;
         --ink-2: #5a5f6c;
         --ink-3: #8a8f9c;
         --navy: #1d2d44;
         --navy-soft: #2a3f5e;
         --cream: #f6ecd6;
-        --rule: #cdbfa0;
-        --rule-soft: #ddd0b0;
+        --cream-2: rgba(246,236,214,0.75);
+        --brown: #6b5236;
+        --brown-soft: #8a6f4d;
+        --rule: #d9caa8;
       }
       html { scroll-behavior: smooth; }
       body {
-        font-family: Inter, sans-serif;
-        background: var(--bg);
-        color: var(--ink);
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
+        font-family: Inter, sans-serif; background: var(--bg); color: var(--ink);
+        font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
       }
       .serif { font-family: Lora, Georgia, serif; font-weight: 500; }
       .serif-italic { font-family: Lora, Georgia, serif; font-weight: 400; font-style: italic; }
-      .eyebrow { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
-      .eyebrow .num { display: inline-block; margin-right: 0.75rem; color: var(--navy); font-feature-settings: "tnum"; }
-      .eyebrow-dark { color: rgba(246,236,214,0.72); }
-      .eyebrow-dark .num { color: var(--cream); }
+      h1, h2, h3 { letter-spacing: -0.005em; }
       a { transition: opacity .2s ease, color .2s ease, background .2s ease; }
       a:hover { opacity: .8; }
-      .nav-link { position: relative; }
-      .nav-link::after { content:''; position:absolute; left:0; right:0; bottom:-6px; height:1px; background: var(--ink); transform:scaleX(0); transform-origin:left; transition:transform .25s ease; }
-      .nav-link:hover::after, .nav-link[aria-current="page"]::after { transform: scaleX(1); }
-      .btn-primary { background: var(--navy); color: var(--cream); }
+
+      .eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); font-weight: 500; }
+      .eyebrow .num { display: inline-block; margin-right: 0.7rem; color: var(--navy); font-feature-settings: "tnum"; }
+      .eyebrow-light { color: rgba(246,236,214,0.78); }
+      .eyebrow-light .num { color: var(--cream); }
+      .eyebrow-navy { color: var(--navy); }
+
+      .btn-primary { background: var(--navy); color: var(--cream); padding: 0.75rem 1.5rem; border-radius: 999px; font-size: 0.875rem; display: inline-block; }
       .btn-primary:hover { background: var(--navy-soft); opacity: 1; }
-      .btn-cream { background: var(--cream); color: var(--navy); }
+      .btn-cream { background: var(--cream); color: var(--navy); padding: 0.75rem 1.5rem; border-radius: 999px; font-size: 0.875rem; display: inline-block; }
       .btn-cream:hover { background: #fff; opacity: 1; }
       .btn-link { color: var(--navy); border-bottom: 1px solid var(--navy); padding-bottom: 2px; font-size: 0.875rem; }
       .btn-link:hover { opacity: 0.7; }
-      .btn-link-cream { color: var(--cream); border-bottom: 1px solid rgba(246,236,214,0.6); padding-bottom: 2px; font-size: 0.875rem; }
-      .btn-link-cream:hover { opacity: 0.8; }
-      .hairline { background: var(--rule-soft); height: 1px; border: 0; }
-      ul.feelings li { padding-left: 1.5rem; position: relative; }
-      ul.feelings li::before { content: ''; position: absolute; left: 0; top: 0.65rem; width: 0.45rem; height: 0.45rem; border-radius: 9999px; background: var(--navy); opacity: 0.6; }
-      ul.feelings-cream li::before { background: var(--cream); opacity: 0.75; }
-      .card-img-wrap { background: var(--bg-2); overflow: hidden; }
-      .card-img-wrap img { transition: transform .9s ease; }
-      .group:hover .card-img-wrap img { transform: scale(1.04); }
-      .pullquote {
-        font-family: Lora, Georgia, serif; font-style: italic; font-weight: 400;
-        font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.5; color: var(--ink);
+
+      ul.feelings { list-style: none; padding: 0; margin: 0; }
+      ul.feelings li { padding-left: 1.4rem; position: relative; line-height: 1.6; }
+      ul.feelings li + li { margin-top: 0.55rem; }
+      ul.feelings li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 0.4rem; height: 0.4rem; border-radius: 9999px; background: var(--navy); opacity: 0.7; }
+      ul.feelings-cream li::before { background: var(--cream); opacity: 0.85; }
+
+      .nav-link { position: relative; }
+      .nav-link::after { content:''; position:absolute; left:0; right:0; bottom:-6px; height:1px; background: currentColor; transform:scaleX(0); transform-origin:left; transition:transform .25s ease; }
+      .nav-link:hover::after, .nav-link[aria-current="page"]::after { transform: scaleX(1); }
+
+      header.site {
+        position: sticky; top: 0; z-index: 50;
+        background: rgba(241,231,211,0.0);
+        backdrop-filter: blur(0px);
+        border-bottom: 1px solid transparent;
+        transition: background .35s ease, backdrop-filter .35s ease, border-color .35s ease, color .35s ease;
+        color: var(--navy);
       }
+      header.site.scrolled {
+        background: rgba(29,45,68,0.94);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(29,45,68,0.25);
+        color: var(--cream);
+      }
+      header.site .nav-cta { background: var(--navy); color: var(--cream); transition: background .35s ease, color .35s ease; }
+      header.site.scrolled .nav-cta { background: var(--cream); color: var(--navy); }
+
+      .pullquote { font-family: Lora, Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(1.125rem, 1.7vw, 1.4rem); line-height: 1.5; color: var(--navy); }
       .pullquote-cream { color: var(--cream); }
-      h1, h2, h3 { letter-spacing: -0.005em; }
+
       .feature-panel {
         background-color: var(--navy);
-        background-image:
-          linear-gradient(rgba(29,45,68,0.78), rgba(29,45,68,0.86)),
-          url('assets/ocean-aerial.jpg');
-        background-size: cover;
-        background-position: center;
+        background-image: linear-gradient(rgba(29,45,68,0.74), rgba(29,45,68,0.88)), url('assets/ocean-aerial.jpg');
+        background-size: cover; background-position: center;
       }
       @media (max-width: 768px) {
-        .feature-panel {
-          background-image:
-            linear-gradient(rgba(29,45,68,0.84), rgba(29,45,68,0.9)),
-            url('assets/ocean-aerial.jpg');
-        }
+        .feature-panel { background-image: linear-gradient(rgba(29,45,68,0.82), rgba(29,45,68,0.92)), url('assets/ocean-aerial.jpg'); }
       }
+
+      .card-img-wrap { background: var(--bg-2); overflow: hidden; }
+      .card-img-wrap img { transition: transform 1s ease; }
+      .group:hover .card-img-wrap img { transform: scale(1.04); }
+
+      .hairline { background: var(--rule); height: 1px; border: 0; opacity: 0.55; }
+
+      .img-frame-portrait { max-width: 280px; aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); }
+      @media (min-width: 1024px) { .img-frame-portrait { max-width: 300px; } }
+      .img-frame-landscape { aspect-ratio: 5/4; max-width: 100%; overflow: hidden; background: var(--bg-2); }
+
+      .section-padding { padding-top: clamp(3.5rem, 6vw, 5.5rem); padding-bottom: clamp(3.5rem, 6vw, 5.5rem); }
     </style>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@type": ["LocalBusiness","MedicalBusiness"],
       "@id": "https://lesliecedartherapy.com/#practice",
       "name": "Leslie Cedar, LCSW",
       "description": "Licensed clinical social worker offering depth-oriented psychotherapy for childhood trauma, anxiety, and depression in Deerfield Beach, Florida and online throughout Florida.",
@@ -124,25 +142,20 @@
         { "@type": "City", "name": "Pompano Beach" },
         { "@type": "City", "name": "Fort Lauderdale" }
       ],
-      "founder": {
-        "@type": "Person",
-        "@id": "https://lesliecedartherapy.com/about.html#leslie",
-        "name": "Leslie Cedar", "honorificSuffix": "LCSW",
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Columbia University" }
-      },
+      "founder": { "@type": "Person", "@id": "https://lesliecedartherapy.com/about.html#leslie", "name": "Leslie Cedar", "honorificSuffix": "LCSW", "alumniOf": { "@type": "CollegeOrUniversity", "name": "Columbia University" } },
       "sameAs": ["https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057"]
     }
     </script>
   </head>
 
   <body>
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 btn-primary px-4 py-2 rounded">Skip to content</a>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 btn-primary">Skip to content</a>
 
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50" style="background: rgba(241,231,211,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule-soft);">
+    <!-- HEADER — transparent over hero, navy on scroll -->
+    <header id="siteHeader" class="site">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="serif text-lg tracking-wide" style="color: var(--ink);">Leslie Cedar, LCSW</a>
-        <nav class="hidden md:flex gap-7 text-sm items-center" style="color: var(--ink-2);" aria-label="Primary">
+        <a href="index.html" class="serif text-lg tracking-wide" style="color: currentColor;">Leslie Cedar, LCSW</a>
+        <nav class="hidden md:flex gap-7 text-sm items-center" aria-label="Primary" style="color: currentColor;">
           <a href="index.html" class="nav-link" aria-current="page">Home</a>
           <a href="about.html" class="nav-link">About</a>
           <a href="services.html" class="nav-link">How I Help</a>
@@ -150,21 +163,21 @@
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a href="tel:+19543703350" class="hidden sm:inline text-sm" style="color: var(--ink-2);">954-370-3350</a>
-          <a href="contact.html" class="btn-primary px-5 py-2 rounded-full text-sm hidden sm:inline-block">Schedule a Call</a>
-          <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+          <a href="tel:+19543703350" class="hidden sm:inline text-sm" style="color: currentColor; opacity: 0.85;">954-370-3350</a>
+          <a href="contact.html" class="nav-cta hidden sm:inline-block px-5 py-2 rounded-full text-sm">Schedule a Call</a>
+          <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" style="color: currentColor;">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
           </button>
         </div>
       </div>
-      <div id="mobileNav" class="md:hidden hidden border-t" style="border-color: var(--rule-soft);">
-        <nav class="px-6 py-6 flex flex-col gap-4 text-sm" style="color: var(--ink);" aria-label="Mobile">
+      <div id="mobileNav" class="md:hidden hidden" style="background: var(--navy); color: var(--cream);">
+        <nav class="px-6 py-6 flex flex-col gap-4 text-sm" aria-label="Mobile">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="services.html">How I Help</a>
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
-          <a href="contact.html" class="btn-primary text-center px-5 py-2.5 rounded-full text-sm mt-2">Schedule a Call</a>
+          <a href="contact.html" class="btn-cream text-center mt-2">Schedule a Call</a>
         </nav>
       </div>
     </header>
@@ -172,11 +185,11 @@
     <main id="main">
 
     <!-- HERO -->
-    <section class="pt-12 md:pt-20 pb-20 md:pb-28">
-      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.15fr,1fr] gap-12 lg:gap-20 items-center">
+    <section class="section-padding" style="padding-top: clamp(2.5rem,5vw,4rem);">
+      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.25fr,1fr] gap-10 lg:gap-14 items-center">
         <div>
           <p class="eyebrow">Deerfield Beach, FL &middot; Online across Florida</p>
-          <h1 class="serif mt-6 leading-[1.1]" style="font-size: clamp(2.125rem, 4vw, 3rem); color: var(--ink);">
+          <h1 class="serif mt-6" style="font-size: clamp(1.85rem, 3.4vw, 2.625rem); line-height: 1.12; color: var(--navy);">
             A return to inner steadiness.
           </h1>
           <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem; max-width: 32rem;">
@@ -185,52 +198,34 @@
             childhood trauma.
           </p>
           <div class="mt-8 flex gap-4 flex-wrap items-center">
-            <a href="contact.html" class="btn-primary px-6 py-3 rounded-full text-sm">Begin Your Healing Journey</a>
+            <a href="contact.html" class="btn-primary">Begin Your Healing Journey</a>
             <a href="about.html" class="btn-link">About Leslie</a>
           </div>
           <p class="mt-6 text-sm" style="color: var(--ink-3);">Free 30-minute consultation. No forms, no pressure.</p>
         </div>
 
-        <!-- Hero image: pastel shore + sea grass, no person -->
-        <div class="max-w-md mx-auto lg:mx-0 lg:ml-auto">
-          <div class="aspect-[4/5] w-full overflow-hidden" style="background: var(--bg-2);">
-            <img
-              src="assets/hero-shore-grass.jpg"
-              alt="Soft pastel shoreline with dune grasses — South Florida coast"
-              class="w-full h-full object-cover"
-            />
-          </div>
+        <div class="img-frame-portrait mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/hero-shore-grass.jpg" alt="Sea grass on a soft pastel shoreline" class="w-full h-full object-cover" />
         </div>
       </div>
     </section>
 
-    <hr class="hairline max-w-6xl mx-auto" />
-
-    <!-- ARE YOU HOLDING BACK — split with woman-at-sunset image -->
-    <section class="py-20 md:py-28">
-      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div class="lg:order-1">
-          <div class="aspect-[4/5] w-full overflow-hidden" style="background: var(--bg-2);">
-            <img
-              src="assets/woman-sunset-beach.jpg"
-              alt="A woman sitting on the shore at sunset, looking out at the water"
-              class="w-full h-full object-cover"
-            />
-          </div>
+    <!-- ARE YOU HOLDING BACK — soft blue band -->
+    <section class="section-padding" style="background: var(--bg-blue);">
+      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div class="img-frame-portrait mx-auto lg:mx-0">
+          <img src="assets/woman-sunset-beach.jpg" alt="A woman sitting peacefully on the beach at sunset" class="w-full h-full object-cover" />
         </div>
-
-        <div class="lg:order-2">
-          <p class="eyebrow"><span class="num">01</span>Recognizing the patterns</p>
-          <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 2.8vw, 2.125rem); color: var(--ink);">
+        <div>
+          <p class="eyebrow eyebrow-navy"><span class="num">01</span>Recognizing the patterns</p>
+          <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--navy);">
             Are you holding back in your life?
           </h2>
-
           <p class="pullquote mt-6">
             &ldquo;You seem fine on the outside, but something inside doesn&rsquo;t feel quite right.&rdquo;
           </p>
-
-          <p class="mt-7 text-xs uppercase tracking-[0.22em]" style="color: var(--ink-3);">You may:</p>
-          <ul class="feelings mt-3 space-y-2.5 leading-relaxed" style="color: var(--ink-2); font-size: 1rem;">
+          <p class="mt-6 text-sm uppercase tracking-[0.18em]" style="color: var(--brown);">You may:</p>
+          <ul class="feelings mt-3" style="color: var(--ink-2); font-size: 0.9375rem;">
             <li>feel stuck, even when you&rsquo;re trying hard to move forward</li>
             <li>struggle with anxiety, self-doubt, or never feeling &ldquo;good enough&rdquo;</li>
             <li>people-please, often fearing rejection</li>
@@ -239,8 +234,7 @@
             <li>feel emotionally disconnected, or numb</li>
             <li>have a hard time feeling joy, or simply being yourself</li>
           </ul>
-
-          <p class="mt-7 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+          <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1rem;">
             Even though childhood trauma can leave lasting effects long into
             adulthood, these patterns can change &mdash; with compassionate,
             depth-oriented therapy.
@@ -249,13 +243,11 @@
       </div>
     </section>
 
-    <hr class="hairline max-w-6xl mx-auto" />
-
-    <!-- THERAPY BEYOND COPING -->
-    <section class="py-20 md:py-28">
+    <!-- THERAPY BEYOND COPING — type-led on tan -->
+    <section class="section-padding">
       <div class="max-w-3xl mx-auto px-6">
         <p class="eyebrow"><span class="num">02</span>My approach</p>
-        <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 2.8vw, 2.125rem); color: var(--ink);">
+        <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--navy);">
           Therapy beyond coping.
         </h2>
 
@@ -268,170 +260,122 @@
           <p>
             Therapy is not about becoming someone else or &ldquo;fixing&rdquo;
             who you are. It&rsquo;s about the relationship &mdash; one that
-            helps you understand the experiences that shaped you, recognize
-            the long-standing survival patterns you&rsquo;ve been carrying,
-            and reconnect with the parts of yourself that have been hidden
-            or pushed aside.
-          </p>
-          <p>
-            In a safe, supportive space, therapy can help you better understand
-            your emotions, recognize triggers connected to the past, strengthen
-            self-awareness, develop greater self-trust, and learn to
-            communicate your needs and boundaries more effectively.
+            helps you understand the experiences that shaped you, recognize the
+            long-standing survival patterns you&rsquo;ve been carrying, and
+            reconnect with the parts of yourself that have been hidden or
+            pushed aside.
           </p>
         </div>
 
-        <p class="serif-italic mt-10 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+        <p class="serif-italic mt-10" style="color: var(--brown); font-size: 1rem; line-height: 1.6;">
           Drawing from psychodynamic, relational, self-psychology, and CBT
-          approaches, my work goes beyond symptom relief &mdash; helping you
+          approaches &mdash; my work goes beyond symptom relief, helping you
           believe in yourself again.
         </p>
       </div>
     </section>
 
-    <!-- NAVY FEATURE PANEL — outcomes -->
-    <section class="feature-panel py-24 md:py-32">
-      <div class="max-w-3xl mx-auto px-6 text-center">
-        <p class="eyebrow eyebrow-dark"><span class="num">03</span>What healing can look like</p>
-        <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 3vw, 2.375rem); color: var(--cream);">
-          Over time, many people begin to&hellip;
-        </h2>
-
-        <ul class="feelings feelings-cream mt-10 space-y-4 leading-relaxed inline-block text-left mx-auto" style="color: var(--cream); font-size: 1.125rem;">
-          <li>feel more confident and grounded</li>
-          <li>feel safer &mdash; within themselves and in their relationships</li>
-          <li>respond to life with more choice and less fear</li>
-          <li>reconnect with their authentic self, who they truly are</li>
-        </ul>
-
-        <p class="pullquote pullquote-cream mt-12 max-w-xl mx-auto">
-          &ldquo;People don&rsquo;t need to be fixed. They need to be heard
-          &mdash; and given time to find their own way.&rdquo;
-        </p>
-
-        <a href="contact.html" class="inline-block mt-12 btn-cream px-7 py-3 rounded-full text-sm">Begin your healing journey</a>
-      </div>
-    </section>
-
-    <!-- HOW I HELP — image cards -->
-    <section class="py-20 md:py-28">
+    <!-- HOW I HELP — warm white card panel -->
+    <section class="section-padding" style="background: var(--card);">
       <div class="max-w-6xl mx-auto px-6">
         <div class="max-w-2xl">
-          <p class="eyebrow"><span class="num">04</span>How I help</p>
-          <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 2.8vw, 2.125rem); color: var(--ink);">
+          <p class="eyebrow"><span class="num">03</span>How I help</p>
+          <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--navy);">
             Therapy for the things that still hurt.
           </h2>
-          <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+          <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1rem;">
             Each of these areas overlaps in real life. Wherever you start, the
             work moves at your pace, in a relationship where every part of you
             is welcome.
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-12 mt-14">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           <a href="services/individual-therapy.html" class="group block">
-            <div class="card-img-wrap aspect-[5/4]">
+            <div class="card-img-wrap" style="aspect-ratio: 4/5;">
               <img src="assets/service-individual-poppy-wide.jpg" alt="Individual therapy" class="w-full h-full object-cover" loading="lazy" />
             </div>
-            <p class="eyebrow mt-5"><span class="num">i</span>Individual</p>
-            <h3 class="serif mt-2" style="font-size: 1.5rem; color: var(--ink);">Individual Therapy</h3>
-            <p class="mt-3 leading-relaxed" style="color: var(--ink-2); font-size: 0.9375rem;">
-              A quiet, steady space to be heard, understood, and gently met
-              where you are.
-            </p>
-            <span class="btn-link inline-block mt-4">Read more</span>
+            <p class="eyebrow mt-4">Individual</p>
+            <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Individual Therapy</h3>
+            <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">A quiet, steady space to be heard and gently met where you are.</p>
           </a>
-
           <a href="services/trauma-therapy.html" class="group block">
-            <div class="card-img-wrap aspect-[5/4]">
+            <div class="card-img-wrap" style="aspect-ratio: 4/5;">
               <img src="assets/service-trauma-ferns-wide.jpg" alt="Childhood trauma healing" class="w-full h-full object-cover" loading="lazy" />
             </div>
-            <p class="eyebrow mt-5"><span class="num">ii</span>Trauma</p>
-            <h3 class="serif mt-2" style="font-size: 1.5rem; color: var(--ink);">Childhood Trauma</h3>
-            <p class="mt-3 leading-relaxed" style="color: var(--ink-2); font-size: 0.9375rem;">
-              Old wounds that keep shaping how you feel today &mdash; tended to
-              carefully, at the pace your nervous system can hold.
-            </p>
-            <span class="btn-link inline-block mt-4">Read more</span>
+            <p class="eyebrow mt-4">Trauma</p>
+            <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Childhood Trauma</h3>
+            <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">Old wounds that keep shaping how you feel today &mdash; tended to carefully.</p>
           </a>
-
           <a href="services/anxiety-therapy.html" class="group block">
-            <div class="card-img-wrap aspect-[5/4]">
+            <div class="card-img-wrap" style="aspect-ratio: 4/5;">
               <img src="assets/service-anxiety-ocean-wide.jpg" alt="Anxiety therapy" class="w-full h-full object-cover" loading="lazy" />
             </div>
-            <p class="eyebrow mt-5"><span class="num">iii</span>Anxiety</p>
-            <h3 class="serif mt-2" style="font-size: 1.5rem; color: var(--ink);">Anxiety</h3>
-            <p class="mt-3 leading-relaxed" style="color: var(--ink-2); font-size: 0.9375rem;">
-              Worry, perfectionism, the racing mind that won&rsquo;t rest
-              &mdash; finding ground again.
-            </p>
-            <span class="btn-link inline-block mt-4">Read more</span>
+            <p class="eyebrow mt-4">Anxiety</p>
+            <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Anxiety</h3>
+            <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">Worry, perfectionism, the racing mind &mdash; finding ground again.</p>
           </a>
-
           <a href="services/depression-therapy.html" class="group block">
-            <div class="card-img-wrap aspect-[5/4]">
+            <div class="card-img-wrap" style="aspect-ratio: 4/5;">
               <img src="assets/service-depression-light-wide.jpg" alt="Depression therapy" class="w-full h-full object-cover" loading="lazy" />
             </div>
-            <p class="eyebrow mt-5"><span class="num">iv</span>Depression</p>
-            <h3 class="serif mt-2" style="font-size: 1.5rem; color: var(--ink);">Depression</h3>
-            <p class="mt-3 leading-relaxed" style="color: var(--ink-2); font-size: 0.9375rem;">
-              The heaviness, the numbness, the not-quite-yourself feeling
-              &mdash; finding your way back.
-            </p>
-            <span class="btn-link inline-block mt-4">Read more</span>
+            <p class="eyebrow mt-4">Depression</p>
+            <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Depression</h3>
+            <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">The heaviness, the numbness &mdash; finding your way back to yourself.</p>
           </a>
         </div>
       </div>
     </section>
 
-    <hr class="hairline max-w-6xl mx-auto" />
+    <!-- NAVY FEATURE PANEL — outcomes -->
+    <section class="feature-panel section-padding" style="padding-top: clamp(4.5rem,7vw,6.5rem); padding-bottom: clamp(4.5rem,7vw,6.5rem);">
+      <div class="max-w-3xl mx-auto px-6">
+        <p class="eyebrow eyebrow-light"><span class="num">04</span>What healing can look like</p>
+        <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--cream);">
+          Over time, many people begin to&hellip;
+        </h2>
+        <ul class="feelings feelings-cream mt-8" style="color: var(--cream); font-size: 1.125rem; line-height: 1.5;">
+          <li>feel more confident and grounded</li>
+          <li>feel safer &mdash; within themselves and in their relationships</li>
+          <li>respond to life with more choice and less fear</li>
+          <li>reconnect with their authentic self, who they truly are</li>
+        </ul>
+        <p class="pullquote pullquote-cream mt-10">
+          &ldquo;People don&rsquo;t need to be fixed. They need to be heard.&rdquo;
+        </p>
+      </div>
+    </section>
 
-    <!-- HI I'M LESLIE — small new headshot + warm intro -->
-    <section class="py-20 md:py-28">
+    <!-- HI I'M LESLIE — new headshot, smaller -->
+    <section class="section-padding">
       <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-[auto,1fr] gap-10 md:gap-14 items-center">
-        <div class="max-w-[220px] mx-auto md:mx-0">
-          <div class="aspect-[4/5] w-full overflow-hidden" style="background: var(--bg-2);">
-            <img
-              src="assets/leslie-headshot.jpg"
-              alt="Leslie Cedar, LCSW"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <p class="serif-italic mt-4 text-sm" style="color: var(--ink-3);">
-            Leslie Cedar, LCSW
-          </p>
+        <div class="img-frame-portrait mx-auto md:mx-0" style="max-width: 240px;">
+          <img src="assets/leslie-headshot.jpg" alt="Leslie Cedar, LCSW" class="w-full h-full object-cover" />
         </div>
-
         <div>
           <p class="eyebrow"><span class="num">05</span>A little about me</p>
-          <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.625rem, 2.6vw, 2rem); color: var(--ink);">
+          <h2 class="serif mt-5" style="font-size: clamp(1.5rem, 2.4vw, 1.875rem); line-height: 1.2; color: var(--navy);">
             Hi, I&rsquo;m Leslie.
           </h2>
-          <div class="mt-6 space-y-4 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
-            <p>
-              I&rsquo;m a licensed therapist who&rsquo;s spent more than forty
-              years sitting with adults through some of life&rsquo;s hardest
-              moments. I trained at Columbia, worked with veterans in Brooklyn
-              and at-risk youth in New York, and for the past thirty years
-              I&rsquo;ve quietly helped adults in South Florida heal from the
-              pain of childhood.
-            </p>
-            <p>
-              My door is always open for a conversation &mdash; no pressure,
-              no commitment, just a chance to see what feels right.
-            </p>
-          </div>
-          <a href="about.html" class="inline-block mt-7 btn-link">More about me</a>
+          <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+            I&rsquo;m a licensed therapist who&rsquo;s spent more than forty
+            years sitting with adults through some of life&rsquo;s hardest
+            moments. I trained at Columbia, worked with veterans in Brooklyn
+            and at-risk youth in New York, and for the past thirty years
+            I&rsquo;ve been quietly helping adults in South Florida heal from
+            the pain of childhood.
+          </p>
+          <a href="about.html" class="inline-block mt-6 btn-link">More about me</a>
         </div>
       </div>
     </section>
 
-    <!-- ROOTED IN SOUTH FLORIDA -->
-    <section class="py-20 md:py-28">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <!-- ROOTED IN SOUTH FLORIDA — text + beach -->
+    <section class="section-padding" style="background: var(--bg-2);">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div>
           <p class="eyebrow"><span class="num">06</span>Deerfield Beach, Florida</p>
-          <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 2.8vw, 2.125rem); color: var(--ink);">
+          <h2 class="serif mt-5" style="font-size: clamp(1.5rem, 2.4vw, 1.875rem); line-height: 1.2; color: var(--navy);">
             Rooted in South Florida.
           </h2>
           <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
@@ -441,68 +385,64 @@
           </p>
           <a href="contact.html" class="inline-block mt-6 btn-link">Visit or schedule online</a>
         </div>
-        <div class="aspect-[5/4] w-full overflow-hidden" style="background: var(--bg-2);">
-          <img
-            src="assets/florida-beach-sunrise.jpg"
-            alt="South Florida shoreline at sunrise — Deerfield Beach therapy practice"
-            class="w-full h-full object-cover"
-          />
+        <div class="img-frame-landscape mx-auto md:mx-0" style="max-width: 480px;">
+          <img src="assets/florida-beach-sunrise.jpg" alt="South Florida shoreline at sunrise" class="w-full h-full object-cover" />
         </div>
       </div>
     </section>
 
-    <hr class="hairline max-w-6xl mx-auto" />
-
-    <!-- CTA -->
-    <section class="py-20 md:py-28">
+    <!-- CTA — minimal -->
+    <section class="section-padding">
       <div class="max-w-2xl mx-auto px-6 text-center">
         <p class="eyebrow">Begin here</p>
-        <h2 class="serif mt-5 leading-[1.18]" style="font-size: clamp(1.75rem, 2.8vw, 2.125rem); color: var(--ink);">
+        <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2rem); line-height: 1.2; color: var(--navy);">
           A short call is a good place to start.
         </h2>
-        <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+        <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
           The first call is free and lasts about thirty minutes. Tell me
           what&rsquo;s going on, ask anything you want, and see how it feels
           to talk with me.
         </p>
-        <a href="contact.html" class="inline-block mt-8 btn-primary px-7 py-3 rounded-full text-sm">Schedule a Free Call</a>
+        <a href="contact.html" class="inline-block mt-8 btn-primary">Schedule a Free Call</a>
         <p class="mt-5 text-sm" style="color: var(--ink-3);">
-          Or call directly: <a href="tel:+19543703350" style="color: var(--ink); border-bottom: 1px solid var(--rule);">954&middot;370&middot;3350</a>
+          Or call directly: <a href="tel:+19543703350" style="color: var(--navy); border-bottom: 1px solid var(--rule);">954&middot;370&middot;3350</a>
         </p>
       </div>
     </section>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer style="border-top: 1px solid var(--rule-soft);">
-      <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 text-sm" style="color: var(--ink-2);">
+    <!-- FOOTER — navy -->
+    <footer style="background: var(--navy); color: var(--cream);">
+      <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 text-sm">
         <div class="md:col-span-2">
-          <p class="serif text-lg" style="color: var(--ink);">Leslie Cedar, LCSW</p>
-          <p class="mt-3 leading-relaxed" style="max-width: 32rem;">
+          <p class="serif text-lg">Leslie Cedar, LCSW</p>
+          <p class="mt-3 leading-relaxed" style="max-width: 32rem; opacity: 0.85;">
             Psychotherapy for adults in Deerfield Beach, Florida and online
             statewide. Healing from childhood trauma, anxiety, and depression.
           </p>
-          <p class="mt-5">
+          <p class="mt-5" style="opacity: 0.85;">
             455 Fairway Drive, Deerfield Beach, FL 33441<br />
-            <a href="tel:+19543703350">954-370-3350</a> &middot; <a href="mailto:lcedartherapy@gmail.com">lcedartherapy@gmail.com</a>
+            <a href="tel:+19543703350" style="color: var(--cream); border-bottom: 1px solid rgba(246,236,214,0.4);">954-370-3350</a>
+            &middot;
+            <a href="mailto:lcedartherapy@gmail.com" style="color: var(--cream); border-bottom: 1px solid rgba(246,236,214,0.4);">lcedartherapy@gmail.com</a>
           </p>
         </div>
         <div>
-          <p class="eyebrow">Pages</p>
-          <ul class="mt-4 space-y-2">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">How I Help</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <p class="eyebrow eyebrow-light">Pages</p>
+          <ul class="mt-4 space-y-2" style="opacity: 0.9;">
+            <li><a href="index.html" style="color: var(--cream);">Home</a></li>
+            <li><a href="about.html" style="color: var(--cream);">About</a></li>
+            <li><a href="services.html" style="color: var(--cream);">How I Help</a></li>
+            <li><a href="faq.html" style="color: var(--cream);">FAQ</a></li>
+            <li><a href="contact.html" style="color: var(--cream);">Contact</a></li>
           </ul>
         </div>
       </div>
-      <div style="border-top: 1px solid var(--rule-soft);">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between gap-2 text-xs" style="color: var(--ink-3);">
+      <div style="border-top: 1px solid rgba(246,236,214,0.15);">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between gap-2 text-xs" style="opacity: 0.7;">
           <p>&copy; <span id="year"></span> Leslie Cedar, LCSW. All rights reserved.</p>
-          <p><a href="https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057" rel="noopener" target="_blank">Verified on Psychology Today</a></p>
+          <p><a href="https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057" rel="noopener" target="_blank" style="color: var(--cream);">Verified on Psychology Today</a></p>
         </div>
       </div>
     </footer>
@@ -515,6 +455,14 @@
         const open = drawer.classList.toggle("hidden") === false;
         btn.setAttribute("aria-expanded", String(open));
       });
+      // Header colour shift on scroll
+      const header = document.getElementById("siteHeader");
+      const onScroll = () => {
+        if (window.scrollY > 60) header.classList.add("scrolled");
+        else header.classList.remove("scrolled");
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
     </script>
   </body>
 </html>
