@@ -24,19 +24,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Petit+Formal+Script&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       :root {
-        --bg: #f1e7d3;
-        --bg-2: #e8dcbe;
-        --bg-blue: #dbe6ed;
-        --bg-blue-2: #c6d4dd;
+        /* Beige (warmly preferred on mobile) */
+        --bg: #f5f1e8;
+        --bg-2: #ede5d3;
+        /* Cleaner baby/light blue (less turquoise/grey on desktop) */
+        --bg-blue: #dfecf6;
+        --bg-blue-2: #c8dcec;
         --card: #fdfaf2;
         --ink: #1d2538;
         --ink-2: #5a5f6c;
-        --ink-3: #8a8f9c;
+        /* Lighter grey for tertiary text */
+        --ink-3: #9aa0ac;
         --navy: #1d2d44;
         --navy-soft: #2a3f5e;
         --cream: #f6ecd6;
@@ -52,6 +55,7 @@
       }
       .serif { font-family: Lora, Georgia, serif; font-weight: 500; }
       .serif-italic { font-family: Lora, Georgia, serif; font-weight: 400; font-style: italic; }
+      .script { font-family: "Petit Formal Script", "Lora", Georgia, serif; font-weight: 400; letter-spacing: 0.01em; }
       h1, h2, h3 { letter-spacing: -0.005em; }
       a { transition: opacity .2s ease, color .2s ease, background .2s ease; }
       a:hover { opacity: .8; }
@@ -95,6 +99,8 @@
       }
       header.site .nav-cta { background: var(--navy); color: var(--cream); transition: background .35s ease, color .35s ease; }
       header.site.scrolled .nav-cta { background: var(--cream); color: var(--navy); }
+      .brand-address { font-size: 11px; letter-spacing: 0.06em; opacity: 0.7; margin-top: 2px; line-height: 1.3; }
+      @media (max-width: 480px) { .brand-address { display: none; } }
 
       .pullquote { font-family: Lora, Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(1.125rem, 1.7vw, 1.4rem); line-height: 1.5; color: var(--navy); }
       .pullquote-cream { color: var(--cream); }
@@ -102,10 +108,10 @@
       .feature-panel {
         background-color: var(--navy);
         background-image: linear-gradient(rgba(29,45,68,0.74), rgba(29,45,68,0.88)), url('assets/ocean-aerial.jpg');
-        background-size: cover; background-position: center;
+        background-size: cover; background-attachment: fixed; background-position: center 40%;
       }
       @media (max-width: 768px) {
-        .feature-panel { background-image: linear-gradient(rgba(29,45,68,0.82), rgba(29,45,68,0.92)), url('assets/ocean-aerial.jpg'); }
+        .feature-panel { background-image: linear-gradient(rgba(29,45,68,0.82), rgba(29,45,68,0.92)), url('assets/ocean-aerial.jpg'); background-attachment: scroll; }
       }
 
       .card-img-wrap { background: var(--bg-2); overflow: hidden; }
@@ -114,7 +120,7 @@
 
       .hairline { background: var(--rule); height: 1px; border: 0; opacity: 0.55; }
 
-      /* Image proportions — wider at tablet (when stacked), tighter on desktop 2-col grids */
+      /* Image proportions */
       .img-frame-portrait { width: 100%; max-width: 520px; aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); margin-left: auto; margin-right: auto; }
       @media (min-width: 1024px) { .img-frame-portrait { max-width: 420px; margin-left: auto; margin-right: 0; } }
       .img-frame-landscape { width: 100%; max-width: 720px; aspect-ratio: 5/4; overflow: hidden; background: var(--bg-2); margin-left: auto; margin-right: auto; }
@@ -144,7 +150,7 @@
         { "@type": "City", "name": "Pompano Beach" },
         { "@type": "City", "name": "Fort Lauderdale" }
       ],
-      "founder": { "@type": "Person", "@id": "https://lesliecedartherapy.com/about.html#leslie", "name": "Leslie Cedar", "honorificSuffix": "LCSW", "alumniOf": { "@type": "CollegeOrUniversity", "name": "Columbia University" } },
+      "founder": { "@type": "Person", "@id": "https://lesliecedartherapy.com/about.html#leslie", "name": "Leslie Cedar", "honorificSuffix": "LCSW" },
       "sameAs": ["https://www.psychologytoday.com/us/therapists/leslie-cedar-boca-raton-fl/102057"]
     }
     </script>
@@ -153,10 +159,13 @@
   <body>
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 btn-primary">Skip to content</a>
 
-    <!-- HEADER — transparent over hero, navy on scroll -->
+    <!-- HEADER -->
     <header id="siteHeader" class="site">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="serif text-lg tracking-wide" style="color: currentColor;">Leslie Cedar, LCSW</a>
+        <a href="index.html" class="flex flex-col" style="color: currentColor;">
+          <span class="serif text-lg tracking-wide">Leslie Cedar, LCSW</span>
+          <span class="brand-address">455 Fairway Drive &middot; Deerfield Beach, FL 33441</span>
+        </a>
         <nav class="hidden md:flex gap-7 text-sm items-center" aria-label="Primary" style="color: currentColor;">
           <a href="index.html" class="nav-link" aria-current="page">Home</a>
           <a href="about.html" class="nav-link">About</a>
@@ -186,33 +195,36 @@
 
     <main id="main">
 
-    <!-- HERO — full viewport on load -->
+    <!-- HERO -->
     <section style="min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 6rem 0 3rem; margin-top: -80px;">
       <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.25fr,1fr] gap-10 lg:gap-14 items-center w-full">
         <div>
-          <p class="eyebrow">Deerfield Beach, FL &middot; Online across Florida</p>
+          <p class="eyebrow">455 Fairway Drive, Deerfield Beach, FL 33441 &middot; Online across Florida</p>
           <h1 class="serif mt-6" style="font-size: clamp(1.85rem, 3.4vw, 2.625rem); line-height: 1.12; color: var(--navy);">
-            A return to inner steadiness.
+            Trauma Therapy in Deerfield Beach
           </h1>
-          <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem; max-width: 32rem;">
-            Compassionate therapy that helps you believe in yourself again &mdash;
-            for the anxiety, depression, and relationship patterns rooted in
-            childhood trauma.
+          <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1rem; max-width: 32rem;">
+            Compassionate therapy that helps you believe in yourself again&hellip;
+          </p>
+          <p class="mt-3 leading-relaxed" style="color: var(--ink-2); font-size: 0.9375rem; max-width: 32rem;">
+            healing anxiety, depression, and relationship patterns rooted in childhood trauma.
+          </p>
+          <p class="script mt-5" style="color: var(--brown-soft); font-size: 1.5rem; line-height: 1.2;">
+            &mdash; A Return to Inner Steadiness &mdash;
           </p>
           <div class="mt-8 flex gap-4 flex-wrap items-center">
             <a href="contact.html" class="btn-primary">Begin Your Healing Journey</a>
-            <a href="about.html" class="btn-link">About Leslie</a>
+            <p class="text-sm" style="color: var(--ink-3);">Free 30 minute Consultation</p>
           </div>
-          <p class="mt-6 text-sm" style="color: var(--ink-3);">Free 30-minute consultation. No forms, no pressure.</p>
         </div>
 
         <div class="img-frame-portrait mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/hero-shore-grass.jpg" alt="Sea grass on a soft pastel shoreline" class="w-full h-full object-cover" />
+          <img src="assets/hero-shore-grass.jpg" alt="Uplifting nature at golden hour" class="w-full h-full object-cover" />
         </div>
       </div>
     </section>
 
-    <!-- ARE YOU HOLDING BACK — soft blue band -->
+    <!-- ARE YOU HOLDING BACK -->
     <section class="section-padding" style="background: var(--bg-blue);">
       <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div class="img-frame-portrait mx-auto lg:mx-0">
@@ -227,11 +239,11 @@
             &ldquo;You seem fine on the outside, but something inside doesn&rsquo;t feel quite right.&rdquo;
           </p>
           <p class="mt-6 text-sm uppercase tracking-[0.18em]" style="color: var(--brown);">You may:</p>
-          <br>
-          <ul class="feelings mt-3" style="color: var(--ink-2); font-size: 0.9375rem;">
+          <ul class="feelings mt-4" style="color: var(--ink-2); font-size: 0.9375rem;">
             <li>feel stuck, even when you&rsquo;re trying hard to move forward</li>
             <li>struggle with anxiety, self-doubt, or never feeling &ldquo;good enough&rdquo;</li>
             <li>people-please, often fearing rejection</li>
+            <li>repeat relationships that leave you hurt or unseen</li>
             <li>feel guilt or shame when you take care of yourself</li>
             <li>push people away, or find it hard to trust</li>
             <li>feel emotionally disconnected, or numb</li>
@@ -239,57 +251,58 @@
           </ul>
           <p class="mt-6 leading-relaxed" style="color: var(--ink-2); font-size: 1rem;">
             Even though childhood trauma can leave lasting effects long into
-            adulthood, these patterns can change &mdash; with compassionate,
+            adulthood, these patterns can change with compassionate,
             depth-oriented therapy.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- THERAPY BEYOND COPING — type-led on tan -->
+    <!-- THERAPY THAT GOES BEYOND COPING -->
     <section class="section-padding">
       <div class="max-w-3xl mx-auto px-6">
         <p class="eyebrow"><span class="num">02</span>My approach</p>
         <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--navy);">
-          Therapy beyond coping.
+          Therapy That Goes Beyond Coping
         </h2>
 
-        <div class="mt-7 space-y-6 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
+        <div class="mt-7 space-y-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
           <p>
-            Healing isn&rsquo;t about &ldquo;getting over&rdquo; your past.
-            It&rsquo;s about making sense of it, reclaiming your voice, and
-            creating the life you truly want.
+            Healing isn&rsquo;t about &ldquo;getting over&rdquo; your past. It&rsquo;s about making sense of it, reclaiming your voice, and creating the life you truly want.
           </p>
           <p>
-            Therapy is not about becoming someone else or &ldquo;fixing&rdquo;
-            who you are. It&rsquo;s about the relationship &mdash; one that
-            helps you understand the experiences that shaped you, recognize the
-            long-standing survival patterns you&rsquo;ve been carrying, and
-            reconnect with the parts of yourself that have been hidden or
-            pushed aside.
+            Therapy is not about &ldquo;fixing&rdquo; who you are or becoming someone else.
+          </p>
+          <p>
+            It&rsquo;s about the therapy relationship helping you understand the traumatic experiences that shaped you, recognize the necessary survival patterns, and connect you with the parts of yourself that had to be hidden or pushed aside.
+          </p>
+          <p>
+            And it begins within a safe space together &mdash; where you can slowly feel supported, emotionally seen and understood &mdash; and where you are met with empathy, respect and compassion.
+          </p>
+          <p>
+            Wherever you start, whether with symptom relief or childhood wounds, our work moves at your pace and within a relationship where all parts of you are welcome.
+          </p>
+          <p>
+            Drawing from psychodynamic, relational, self-psychology, and CBT approaches, our work together can begin to loosen old patterns and the real, true you can gently emerge. You start to believe in yourself again &mdash; and that begins to transform your life.
           </p>
         </div>
 
-        <p class="serif-italic mt-10" style="color: var(--brown); font-size: 1rem; line-height: 1.6;">
-          Drawing from psychodynamic, relational, self-psychology, and CBT
-          approaches &mdash; my work goes beyond symptom relief, helping you
-          believe in yourself again.
-        </p>
+        <div class="mt-10">
+          <a href="contact.html" class="btn-primary">Begin Your Healing Journey</a>
+        </div>
       </div>
     </section>
 
-    <!-- HOW I HELP — warm white card panel -->
+    <!-- HOW I HELP -->
     <section class="section-padding" style="background: var(--card);">
       <div class="max-w-6xl mx-auto px-6">
         <div class="max-w-2xl">
           <p class="eyebrow"><span class="num">03</span>How I help</p>
           <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--navy);">
-            Therapy for the things that still hurt.
+            Therapy for what still hurts.
           </h2>
           <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1rem;">
-            Each of these areas overlaps in real life. Wherever you start, the
-            work moves at your pace, in a relationship where every part of you
-            is welcome.
+            Each of these areas overlaps in real life.
           </p>
         </div>
 
@@ -301,14 +314,16 @@
             <p class="eyebrow mt-4">Individual</p>
             <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Individual Therapy</h3>
             <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">A quiet, steady space to be heard and gently met where you are.</p>
+            <span class="btn-link" style="display: inline-block; margin-top: 1rem;">Learn more →</span>
           </a>
           <a href="services/trauma-therapy.html" class="group block">
             <div class="card-img-wrap" style="aspect-ratio: 4/5;">
-              <img src="assets/service-trauma-ferns-wide.jpg" alt="Childhood trauma healing" class="w-full h-full object-cover" loading="lazy" />
+              <img src="assets/forest-path.jpg" alt="Childhood trauma healing" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <p class="eyebrow mt-4">Trauma</p>
             <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Childhood Trauma</h3>
             <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">Old wounds that keep shaping how you feel today &mdash; tended to carefully.</p>
+            <span class="btn-link" style="display: inline-block; margin-top: 1rem;">Learn more →</span>
           </a>
           <a href="services/anxiety-therapy.html" class="group block">
             <div class="card-img-wrap" style="aspect-ratio: 4/5;">
@@ -317,6 +332,7 @@
             <p class="eyebrow mt-4">Anxiety</p>
             <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Anxiety</h3>
             <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">Worry, perfectionism, the racing mind &mdash; finding ground again.</p>
+            <span class="btn-link" style="display: inline-block; margin-top: 1rem;">Learn more →</span>
           </a>
           <a href="services/depression-therapy.html" class="group block">
             <div class="card-img-wrap" style="aspect-ratio: 4/5;">
@@ -325,6 +341,7 @@
             <p class="eyebrow mt-4">Depression</p>
             <h3 class="serif mt-2" style="font-size: 1.25rem; color: var(--navy);">Depression</h3>
             <p class="mt-2 leading-relaxed" style="color: var(--ink-2); font-size: 0.875rem;">The heaviness, the numbness &mdash; finding your way back to yourself.</p>
+            <span class="btn-link" style="display: inline-block; margin-top: 1rem;">Learn more →</span>
           </a>
         </div>
       </div>
@@ -337,7 +354,6 @@
         <h2 class="serif mt-5" style="font-size: clamp(1.625rem, 2.6vw, 2.125rem); line-height: 1.2; color: var(--cream);">
           Over time, many people begin to&hellip;
         </h2>
-        <br>
         <ul class="feelings feelings-cream mt-8" style="color: var(--cream); font-size: 1.125rem; line-height: 1.5;">
           <li>feel more confident and grounded</li>
           <li>feel safer &mdash; within themselves and in their relationships</li>
@@ -345,12 +361,12 @@
           <li>reconnect with their authentic self, who they truly are</li>
         </ul>
         <p class="pullquote pullquote-cream mt-10">
-          &ldquo;People don&rsquo;t need to be fixed. They need to be heard.&rdquo;
+          &ldquo;Healing is about reclaiming our power and rewriting our future.&rdquo;
         </p>
       </div>
     </section>
 
-    <!-- HI I'M LESLIE — new headshot, smaller -->
+    <!-- HI I'M LESLIE -->
     <section class="section-padding">
       <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-[auto,1fr] gap-10 md:gap-14 items-center">
         <div class="img-frame-portrait mx-auto md:mx-0" style="max-width: 240px;">
@@ -363,10 +379,10 @@
           </h2>
           <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
             I&rsquo;m a licensed therapist who&rsquo;s spent more than forty
-            years sitting with adults through some of life&rsquo;s hardest
-            moments. I trained at Columbia, worked with veterans in Brooklyn
-            and at-risk youth in New York, and for the past thirty years
-            I&rsquo;ve been quietly helping adults in South Florida heal from
+            years connecting with adults through some of life&rsquo;s hardest
+            moments. I worked with Veterans in Brooklyn and at-risk youth and adults
+            in private practice in New York, and for the past thirty years
+            I&rsquo;ve been helping adults in South Florida heal from
             the pain of childhood.
           </p>
           <a href="about.html" class="inline-block mt-6 btn-link">More about me</a>
@@ -374,7 +390,7 @@
       </div>
     </section>
 
-    <!-- ROOTED IN SOUTH FLORIDA — text + beach -->
+    <!-- ROOTED IN SOUTH FLORIDA -->
     <section class="section-padding" style="background: var(--bg-2);">
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div>
@@ -403,9 +419,8 @@
           A short call is a good place to start.
         </h2>
         <p class="mt-5 leading-relaxed" style="color: var(--ink-2); font-size: 1.0625rem;">
-          The first call is free and lasts about thirty minutes. Tell me
-          what&rsquo;s going on, ask anything you want, and see how it feels
-          to talk with me.
+          A free 30-minute consultation &mdash; tell me what&rsquo;s going on, ask
+          anything you want, and see how it feels to talk with me.
         </p>
         <a href="contact.html" class="inline-block mt-8 btn-primary">Schedule a Free Call</a>
         <p class="mt-5 text-sm" style="color: var(--ink-3);">
@@ -416,7 +431,7 @@
 
     </main>
 
-    <!-- FOOTER — navy -->
+    <!-- FOOTER -->
     <footer style="background: var(--navy); color: var(--cream);">
       <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 text-sm">
         <div class="md:col-span-2">
